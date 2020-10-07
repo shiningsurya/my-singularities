@@ -266,8 +266,8 @@ From:                ubuntu:20.04
 	export PGPLOT_DIR=/usr/lib/pgplot5
 	export PGPLOT_FONT=/usr/lib/pgplot5/grfont.dat
 	export PGPLOT_INCLUDES=/usr/include
-	export PGPLOT_BACKGROUND=black
-	export PGPLOT_FOREGROUND=white
+	export PGPLOT_BACKGROUND=white
+	export PGPLOT_FOREGROUND=black
 	export PGPLOT_DEV=/ps
 	
 	# alias
