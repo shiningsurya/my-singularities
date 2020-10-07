@@ -6,8 +6,8 @@ Basic ubuntu with python and all the stuff needed for development.
 Not specialized.
 
 
-## ppd
-`vanilla` with `presto,psrchive,dspsr`
+## PsrPPD
+`vanilla` with `presto,psrchive,dspsr` which are ubiquitously used in pulsar/frb astronomy.
 
 
 ## AOB
