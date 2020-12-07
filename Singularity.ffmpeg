@@ -99,7 +99,7 @@ From:                ubuntu:20.04
 	apt-get -y install rsync parallel
 
 	# ffmpeg
-	apt-get -y install ffmpeg
+	apt-get -y install ffmpeg=4.3.1
 
 	# misc
 	apt-get -y install htop
@@ -144,6 +144,16 @@ From:                ubuntu:20.04
 	# sigpyproc
 	pip3 install -U git+https://github.com/FRBs/sigpyproc3
 
+	# clean apt
+	apt-get clean
+
+	# update alternatives
+	update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+	update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
+	update-alternatives --set python /usr/bin/python3.8
+
+	# ldconfig
+	ldconfig
 
 	CTIME=`date`
 	echo "export CTIME=\"${CTIME}\"" >> $SINGULARITY_ENVIRONMENT
